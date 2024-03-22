@@ -222,4 +222,24 @@ $ git push -u origin main
 
 * The HEAD file is one of the service files of the .git folder. It points to the commit that was made most recently (the newest one). <br>
 ---
+## Status of files in Git
 
+* There are several files statuses in Git:
+    1. untracked;
+    2. tracked;
+    3. staged;
+    4. modified. <br>
+
+### Files statuses flowchart
+
+```mermaid
+sequenceDiagram
+  Add file --> untracked;
+  untracked -- "git add (add to index)" --> tracked and staged;
+  tracked and staged -- "make changes" --> tracked, staged, and modified;
+  tracked, staged, and modified -- "commit (now the git status is clear") --> tracked;
+  tracked -- "make new changes" --> modified and tracked;
+  modified and tracked -- "git add" --> again tracked and staged;
+  again tracked and staged -- "commit (the git status is clear again)" --> again just tracked;
+```
+---
