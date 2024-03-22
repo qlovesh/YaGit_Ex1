@@ -202,3 +202,15 @@ $ git push -u origin main
 * Git hashes (converts) commit information using the SHA-1 algorithm (Secure Hash Algorithm). 
 * If a hash is obtained twice for the same set of input data, the result is guaranteed to be the same. <br>
 ---
+## Git log and its content
+
+* 'git log' shows extended history about commiting. It includes full hashes of each commit, author and his email, the date of the creation, and message.
+* In order to show a shorten version of the commiting history, it is convinient to use 'git log --oneline'. This history will show oneline represenation, and include shorten hash and the message.
+* The number of symbols in shorten hash is controled by Git in the way that only nessecary symbols remain, which describe uniquely the commit. <br>
+
+![git log](https://pictures.s3.yandex.net/resources/M2_T5_02_1685969923.png "git log")
+
+![git log --oneline](https://pictures.s3.yandex.net/resources/M2_T5_03_1685970110.png "git log --oneline")
+
+---
+
