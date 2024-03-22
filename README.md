@@ -187,3 +187,18 @@ $ git push -u origin main
     3. Project documentation - detailed instructions about what the project is.
     4. Project plans, if any.
 ---
+
+# Navigation through the commits.
+---
+
+## Hash - what is it?
+
+* If you run 'git log' and look on the history of the committing, you will see on the first line of the message commits' hashes, or in other words their IDs. They include 40 letters and number unique combination.
+* These hashes can be used further to run commands on a particular commit.
+* So, has is the main identifier of the commit. It includes encoded data about the commit:
+    - when the commit was made, 
+    - the contents of the files in the repository at the time of the commit
+    - a link to the previous, or parent, commit.
+* Git hashes (converts) commit information using the SHA-1 algorithm (Secure Hash Algorithm). 
+* If a hash is obtained twice for the same set of input data, the result is guaranteed to be the same. <br>
+---
