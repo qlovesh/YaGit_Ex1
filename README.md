@@ -214,3 +214,12 @@ $ git push -u origin main
 
 ---
 
+## Head
+
+* Head can be seen, when we call 'git log':
+
+![HEAD](https://pictures.s3.yandex.net/resources/M2_T5_01_1685972979.png "HEAD")
+
+* The HEAD file is one of the service files of the .git folder. It points to the commit that was made most recently (the newest one). <br>
+---
+
